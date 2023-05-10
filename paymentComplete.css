@@ -1,0 +1,77 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nums span{
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: url(assets/Ellipse\ 1.svg);
+    border-radius: 360px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #898989;
+}
+hr.solids {
+    border-top:1px solid #E5E5E5;
+    width: 17%;
+    margin-top: -1.6%;
+}
+.img_secs{
+    display: flex;
+    justify-content: center;
+}
+.img_secs img{
+    width: 362px;
+    height: 330px;
+}
+.information_heading{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #B0B0B0;
+}
+.btns{
+    margin-bottom: 7%;
+}
+
+@media only screen and (max-width: 1025px) {
+    .new_num_sec{
+        grid-template-columns: 1fr 1.2fr 1fr;
+        margin-top: 10%;
+    }
+    hr.solids {
+        width: 23%;
+        margin-top: -2%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .new_num_sec{
+        grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    }
+    hr.solids {
+        width: 33%;
+        margin-top: -2%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .new_num_sec{
+        grid-template-columns: 0fr 1fr 0fr;
+    }
+    .nums{
+        margin-left: 12%;
+    }
+    hr.solids {
+        width: 39%;
+        margin-top: -4%;
+    }
+}

@@ -1,0 +1,207 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.number_section{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 2fr;
+    margin-top: 5%;
+}
+.num_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num_sec span{
+    text-align: center;
+    padding-left: 12%;
+    padding-right: 16%;
+    padding-bottom: 14%;
+    background-image: url(assets/Ellipse\ 2.png);
+    border-radius: 360px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 50px;
+    padding-top: 4%;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #898989;
+    width: 45px;
+}
+hr.solid {
+    border-top:1px solid var(--border_color);
+    width: 17%;
+    margin-top: -2.3%;
+}
+.heading_section{
+    margin-top: 6%;
+}
+.heading_section h1{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: var(--dark_blue);
+}
+.heading_section p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: var(--light_gray);
+    margin-top: -2%;
+}
+
+.details_sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4%;
+}
+.form_sec{
+    padding-left: 14%;
+    padding-right: 20%;
+    padding-top: 7%;
+    border-left: 1px solid var(--border_color);
+}
+.img_sec{
+    padding-left: 20%;
+    padding-right: 14%;
+    padding-top: 7%;
+}
+.img_sec img{
+    width: 420px;
+}
+.text_sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.text_sec_1 h3{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--dark_blue);
+    margin-top: 1%;
+}
+.text_sec_1 p{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--light_gray);
+    margin-top: -9%;
+}
+.text_sec_1 h5{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    text-align: right;
+    color: var(--dark_blue);
+}
+.text_sec_1 h5 span{
+    font-weight: 300;
+    color: var(--light_gray);
+}
+.labels{
+    display: block;
+    margin-top: 3%;
+    margin-bottom: 1.5%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: var(--dark_blue);
+}
+.inputs{
+    display: block;
+    width: 320px;
+    background: #F5F6F8;
+    border: 0px;
+    height: 45px;
+    border-radius: 4px;
+}
+
+.button{
+    display: block;
+    height: 50px;
+    width: 300px;
+    border: 0px;
+    background: var(--light_blue);
+    box-shadow: 0px 8px 15px rgba(50, 82, 223, 0.3);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 170%;
+    text-align: center;
+    color: #FFFFFF;
+    align-items: center;
+    margin: auto;
+}
+.button1{
+    margin-top: 5%;
+}
+.button2{
+    margin-top: 2%;
+    background: #F5F6F8;
+    color: #B3B3B3;
+    margin-bottom: 10%;
+}
+
+
+@media only screen and (max-width: 1025px) {
+    .details_sec{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 4%;
+    }
+    .img_sec{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .img_sec img{
+        width: 100%;
+    }
+    .form_sec{
+        padding-left: 10%;
+        padding-right: 10%;
+        border: 0px;
+    }
+    .inputs{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .number_section{
+        grid-template-columns: 0fr 1.2fr 0fr;
+        margin-top: 5%;
+    }
+    .num_sec span{
+        padding-left: 8%;
+        padding-right: 10%;
+        padding-bottom: 8%;
+        padding-top: 2%;
+    }
+    hr.solid {
+        width: 40%;
+        margin-top: -4.7%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    hr.solid {
+        width: 40%;
+        margin-top: -7%;
+    }
+    .text_sec{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .text_sec_1 h5{
+        text-align:left;
+    }
+    .button{
+        width: 80%;
+    }
+}
